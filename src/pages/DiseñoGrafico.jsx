@@ -3,6 +3,7 @@ import {
   FaCheck,
   FaCircle,
   FaCode,
+  FaLaptop,
   FaQuoteLeft,
   FaQuoteRight,
   FaToolbox,
@@ -66,27 +67,32 @@ const DiseñoGrafico = () => {
           title={"Comunicación visual en la actualidad"}
           img={<img src={Visual} alt="imagen ilustrativa" />}>
           <p className="text-justify mt-10 text-lg">
-            Hay una variedad de formas de hacer un diseño, pero el más básico es
-            a través de la comunicación visual. El diseño gráfico combina una
-            variedad de medios de presentación, que van desde dibujos simples
-            hasta los sitios web elaborados. Sus orígenes se pueden rastrear de
-            nuevo a los jeroglíficos egipcios, en lo que respecta a las antiguas
-            pinturas de la cueva. Sin embargo,
+            Digamos por ejemplo que se encuentra con la necesidad de comunicar
+            un mensaje, ¿de qué forma lo comunicaría? Puede ir contándoselo
+            persona a persona, transmitirlo en alto con un megáfono o emitirlo
+            por la radio para que llegue a más receptores. En este caso estaría
+            utilizando la comunicación verbal. Pero ¿y si para comunicar ese
+            mismo mensaje utiliza como medio un cartel, un folleto o un anuncio
+            en la prensa?
             <span className="font-semibold mx-1">
-              el diseño gráfico abarca una amplia variedad de actividades
+              Entonces estaría utilizando un tipo de comunicación visual
+              denominada diseño gráfico.
             </span>
-            y ahora es una idea intrincada que cubre una amplia variedad de
-            tecnologías y apelación estética.
+            El diseño gráfico informa, atrae la atención, organiza, convence,
+            estimula, identifica, localiza, diferencia, pero sobre todo, el
+            diseño gráfico comunica visualmente un mensaje.
           </p>
           <p className="text-justify mt-10 text-lg">
-            Si bien el diseño gráfico se practica generalmente en el mundo
-            comercial, también hay muchas formas que se encuentran en nuestra
-            vida cotidiana. Desde componer elementos visuales para diseñar
-            diseños y carteles, casi todos los seres humanos practica alguna
-            forma de diseño gráfico. Ya sea que esté impreso o en la web, todos
-            practiquen alguna forma de ella en su vida diaria. Y mientras haya
-            muchas formas diferentes de diseño gráfico, estos son solo algunos
-            de los más comunes.
+            La verdadera finalidad del diseño gráfico es satisfacer una
+            necesidad previa de comunicación, de transmisión de mensajes a un
+            receptor por medio de signos visuales. En todo proceso de
+            comunicación aparecen tres elementos básicos:
+            <span className="font-semibold mx-1">
+              un emisor, un mensaje y un receptor.
+            </span>
+            En comunicación gráfica, el emisor es la empresa o individuo que
+            quiere transmitir un mensaje concreto a sus clientes o congéneres,
+            que en este caso son los receptores
           </p>
         </InfoSection>
         <InfoSection
@@ -106,7 +112,7 @@ const DiseñoGrafico = () => {
             y conduzca a una página de destino bien diseñada o fotos de
             productos. También conduce a un correo electrónico de seguimiento,
             publicaciones sociales, infografías y más. Estos son solo algunos de
-            los muchos beneficios de contratar a un despacho de diseño gráfico
+            los muchos beneficios de contratar una agencia de diseño gráfico
             profesional.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 mx-auto p-5">
@@ -163,7 +169,7 @@ const DiseñoGrafico = () => {
               </ul>
             </div>
             <div className="mt-5">
-              <FaCode className="text-7xl my-5" />
+              <FaLaptop className="text-7xl my-5" />
               <h3 className="text-xl">Diseño Web</h3>
               <ul className="p-2.5 space-y-1">
                 <li className="flex items-center gap-2">
@@ -180,7 +186,7 @@ const DiseñoGrafico = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <FaCircle className="text-[6px] text-link-500" />
-                  Sitios empresariales
+                  Sitios Empresariales
                 </li>
                 <li className="flex items-center gap-2">
                   <FaCircle className="text-[6px] text-link-500" />
@@ -189,23 +195,28 @@ const DiseñoGrafico = () => {
               </ul>
             </div>
             <div className="mt-5">
-              <FaCheck className="text-7xl my-5" />
+              <FaCode className="text-7xl my-5" />
               <h3 className="text-xl">Desarrollo web</h3>
               <ul className="p-2.5 space-y-1">
                 <li className="flex items-center gap-2">
                   <FaCircle className="text-[6px] text-link-500" />
+                  Autenticación de Ususarios
                 </li>
                 <li className="flex items-center gap-2">
                   <FaCircle className="text-[6px] text-link-500" />
+                  Publicación de Blog
                 </li>
                 <li className="flex items-center gap-2">
                   <FaCircle className="text-[6px] text-link-500" />
+                  Pasarela de Pagos
                 </li>
                 <li className="flex items-center gap-2">
                   <FaCircle className="text-[6px] text-link-500" />
+                  Formulario de Contacto
                 </li>
                 <li className="flex items-center gap-2">
                   <FaCircle className="text-[6px] text-link-500" />
+                  Despliegue en Servidores
                 </li>
               </ul>
             </div>
