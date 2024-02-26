@@ -80,7 +80,7 @@ export const menu = [
   { name: "Inicio", href: "/" },
   { name: "Blog", href: "/blog" },
   { name: "Tienda", href: "/tienda" },
-  // { name: "Cursos", href: "#/cursos" },
+  { name: "Cursos", href: "#cursos" },
 ];
 export const soporte = [
   { name: "Contacto", href: "/contacto" },
