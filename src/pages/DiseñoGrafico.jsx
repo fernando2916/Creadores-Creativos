@@ -10,7 +10,7 @@ import {
 import { FaShield } from "react-icons/fa6";
 import { InfoSection } from "../layout/InfoSection";
 import Diseñadores from "../assets/disenadores.webp";
-import Visual from "../assets/iconoError.svg";
+import Visual from "../assets/Error_404.png";
 
 const DiseñoGrafico = () => {
   // useEffect(() => {
