@@ -11,7 +11,8 @@ import {
 import { FaShield } from "react-icons/fa6";
 import { InfoSection } from "../layout/InfoSection";
 import Diseñadores from "../assets/disenadores.webp";
-import Visual from "../assets/Error_404.png";
+import diseñadora from "../assets/diseñadora.svg";
+import diseñador from "../assets/diseñador.svg";
 
 const DiseñoGrafico = () => {
   // useEffect(() => {
@@ -65,7 +66,7 @@ const DiseñoGrafico = () => {
         </section>
         <InfoSection
           title={"Comunicación visual en la actualidad"}
-          img={<img src={Visual} alt="imagen ilustrativa" />}>
+          img={<img src={diseñadora} alt="imagen ilustrativa" />}>
           <p className="text-justify mt-10 text-lg">
             Digamos por ejemplo que se encuentra con la necesidad de comunicar
             un mensaje, ¿de qué forma lo comunicaría? Puede ir contándoselo
@@ -92,13 +93,13 @@ const DiseñoGrafico = () => {
             </span>
             En comunicación gráfica, el emisor es la empresa o individuo que
             quiere transmitir un mensaje concreto a sus clientes o congéneres,
-            que en este caso son los receptores
+            que en este caso son los receptores.
           </p>
         </InfoSection>
         <InfoSection
           className={"order-last"}
           title={"Profesionales en Diseño Gráfico en México"}
-          img={<img src={Visual} alt="imagen ilustrativa" />}>
+          img={<img src={diseñador} alt="imagen ilustrativa" />}>
           <p className="text-justify mt-10 text-lg">
             Ya sea que esté buscando lanzar un nuevo negocio o simplemente un
             rebrand existente,
@@ -252,7 +253,9 @@ const DiseñoGrafico = () => {
 
         <section className="py-5 flex items-center ">
           <div className="flex flex-col bg-nav-950 p-10 w-full justify-between items-center mx-auto">
-            <h2 className="text-xl">Conoce nuestro trabajo</h2>
+            <h2 className="text-4xl font-semibold">
+              Lo que nuestros clientes dicen:
+            </h2>
             <p className="text-center flex p-5 gap-2 items-center md:text-3xl font-semibold">
               <FaQuoteLeft className="text-5xl font-bold text-link-100" />
               Día a día a hacemos lo que más nos gusta y nos inspira: Trabajar
