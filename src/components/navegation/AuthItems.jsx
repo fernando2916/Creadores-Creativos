@@ -50,7 +50,7 @@ const AuthItems = ({ isAuth }) => {
               </button>
             </li> */}
             <li className="relative py-2.5 lg:px-2">
-              <Link>
+              <Link to="carrito">
                 <FaShoppingCart className="text-2xl" />
               </Link>
               <FaCircle className="text-alerts-500 hidden top-0 absolute right-1 text-sm" />

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import {
   FaAngleLeft,
   FaAngleRight,
@@ -10,9 +10,9 @@ import Diseñadores from "../assets/disenadores.webp";
 import Equipo from "../assets/equipo.webp";
 
 const Recursos = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <>
       <header>
@@ -39,7 +39,7 @@ const Recursos = () => {
           </div>
         </div>
       </header>
-      <main className="m-5">
+      <main className="m-2">
         <h5 className="flex items-center gap-x-2 mb-5">
           Mostrando
           <span className="font-bold">1-10</span>
@@ -53,10 +53,8 @@ const Recursos = () => {
               <div>
                 <img src={Equipo} alt="" className="rounded-sm mb-3" />
               </div>
-              <div className="mb-2 bg-categoria-100 p-2 rounded-md w-[77px]">
-                <p className="text-gray-100 font-semibold text-sm ">
-                  Categoria
-                </p>
+              <div className="mb-2 bg-categoria-100 rounded-md inline-flex ">
+                <span className="font-semibold text-base p-2">Categoria</span>
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-btn-50">

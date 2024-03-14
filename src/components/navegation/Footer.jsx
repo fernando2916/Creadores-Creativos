@@ -101,7 +101,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="mt-8 border-gray-400 pt-8 md:flex md:items-center md:justify-between">
+        <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {social.map((item) => (
               <Link
@@ -114,14 +114,11 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <p className="mt-8 md:mt-0 md:order-1">
+          <p className="mt-8 text-base md:mt-0 md:order-1">
             <Link to="/" className="text-md text-link-100 font-semibold">
               Emprendedores Creativos &copy; {""}
             </Link>
-            <span className="text-md font-semibold">
-              {reserv}
-              {""}
-            </span>
+            <span className="text-md font-semibold">{reserv} </span>
             Todos los derechos reservados.
           </p>
         </div>

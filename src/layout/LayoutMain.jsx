@@ -27,7 +27,7 @@ export default function LayoutMain() {
   return (
     <>
       <Header />
-      <button className="rounded-full bg-btn-600 text-xl p-3 right-7 bottom-7 fixed up hidden">
+      <button className="rounded-full bg-btn-600 text-xl p-3 right-7 bottom-7 fixed up hidden z-50">
         <FaAngleUp />
       </button>
       <Outlet />

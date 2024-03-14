@@ -3,6 +3,7 @@ import {
   FaCheck,
   FaCircle,
   FaCode,
+  FaHandshake,
   FaLaptop,
   FaQuoteLeft,
   FaQuoteRight,
@@ -33,11 +34,11 @@ const DiseñoGrafico = () => {
                 Agencia de Diseño Gráfico
               </span>
               <h3 className="text-lg md:text-5xl font-extrabold">
-                Diseñamos profesionalmente, cuidando todos los detalles.
+                Diseñamos profesionalmente cuidando todos los detalles.
               </h3>
               <p className="text-sm md:text-xl">
-                Desde un logotipo, una tipografía, la portada de una revista o
-                un libro, hasta toda tu identidad eh imagen gráfica.
+                Desde una tipografía hasta la identidad eh imagen gráfica de tu
+                marca.
               </p>
             </div>
           </div>
@@ -50,7 +51,7 @@ const DiseñoGrafico = () => {
             diseño web, editorial, entre otras, con más de 5 años de
             experiencia.
           </div>
-          <div className="mx-5 lg:mx-auto lg:container py-10 flex text-justify justify-center text-xl ">
+          <div className="mx-5 lg:mx-auto lg:container pt-10 flex text-justify justify-center text-xl ">
             <div>
               En{" "}
               <span className="text-link-100">
@@ -252,8 +253,8 @@ const DiseñoGrafico = () => {
         </section>
 
         <section className="py-5 flex items-center ">
-          <div className="flex flex-col bg-nav-950 p-10 w-full justify-between items-center mx-auto">
-            <h2 className="text-4xl font-semibold">
+          <div className="flex flex-col bg-cont-100 p-10 w-full justify-center items-center mx-auto">
+            <h2 className="text-4xl font-semibold text-center">
               Lo que nuestros clientes dicen:
             </h2>
             <p className="text-center flex p-5 gap-2 items-center md:text-3xl font-semibold">
@@ -264,13 +265,38 @@ const DiseñoGrafico = () => {
             </p>
           </div>
         </section>
+        <section className="">
+          <div className="text-center justify-center">
+            <h3 className="text-4xl font-semibold mx-14">
+              Por qué deberías elegirnos como tu agencia de diseño
+            </h3>
+            <p className="pt-2 mx-10 text-gray-100">
+              Encontraremos las mejores alternativas para que tu marca tenga ese
+              impacto que estás buscando para tu negocio.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-content-center text-center gap-8 mt-10 max-w-7xl mx-auto flex-shrink">
+            <div className="grid col-span-1 place-items-center gap-5">
+              <div className="flex place-content-center">
+                <span className="flex justify-center items-center text-6xl py-4  h-full w-full object-cover">
+                  <FaToolbox />
+                </span>
+              </div>
+              <h2 className="text-xl font-medium ">Originalidad</h2>
+              <p className="mx-5 text-lg text-gray-100">
+                Lo más importante al contratar un servicio de diseño gráfico
+                profesional es generar conceptos creativos y únicos.
+              </p>
+            </div>
+          </div>
+        </section>
         <section className="py-5 px-8 max-w-7xl mx-auto items-center">
           <div className=" text-center max-w-4xl mx-auto">
             <p className="mt-2 font-bold tracking-tight text-5xl leading-none">
               Precios de nuestros paquetes de diseño.
             </p>
           </div>
-          <p className="mx-auto mt-6 max-w-2xl text-center text-xl leading-8 text-gray-300">
+          <p className="mx-auto mt-6 max-w-2xl text-center text-xl leading-8 text-gray-100">
             Hemos armado 3 paquetes que cumplen tus necesidades desde las
             básicas hasta los complementos impresos.
           </p>
@@ -288,7 +314,7 @@ const DiseñoGrafico = () => {
               <div className=" flex items-center justify-between gap-4">
                 <h3 className="text-xl font-semibold leading-8 ">Freelancer</h3>
               </div>
-              <p className="mt-5 text-xs leading-6 text-gray-200">
+              <p className="mt-5 text-xs leading-6 text-gray-100">
                 El paquete ideal para iniciar tu idea de negocios. Comienza con
                 una imagen impactante y construye relaciones de negocio con una
                 excelente primera impresión.
@@ -339,7 +365,7 @@ const DiseñoGrafico = () => {
                   Más Popular
                 </p>
               </div>
-              <p className="mt-5 text-xs leading-6 text-gray-200">
+              <p className="mt-5 text-xs leading-6 text-gray-100">
                 Nuestro paquete premium está diseñado para cubrir las áreas más
                 necesarias de comunicación y diseño. Si eres un emprendedor con
                 visión a futuro, o quieres darle ese gran impulso a tu marca o
@@ -389,7 +415,7 @@ const DiseñoGrafico = () => {
                   Pyme
                 </h3>
               </div>
-              <p className="mt-5 text-xs leading-6 text-gray-200">
+              <p className="mt-5 text-xs leading-6 text-gray-100">
                 Si buscas iniciar un negocio en forma, o incluso rediseñar la
                 imagen que ya tenías, este paquete es ideal para quienes buscan
                 ir más lejos.

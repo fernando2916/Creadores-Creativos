@@ -8,7 +8,6 @@ import {
   FaBuffer,
   FaBuilding,
   FaHome,
-  FaSearch,
   FaShoppingBag,
   FaVideo,
 } from "react-icons/fa";
@@ -46,16 +45,6 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <form className="hidden xl:flex  z-30 relative left-40">
-        <div className=" hidden xl:flex fixed z-30 ">
-          <input
-            type="text"
-            placeholder="Buscar cualquier cosa..."
-            className="w-[80px] focus:w-[350px] transition-all duration-1000 ease-in-out p-2 pl-10 focus:pr-5 rounded-md bg-nav-900 outline-none border-2 border-link-100"
-          />
-          <FaSearch className="absolute top-3 left-3 text-btn-200 text-[20px]" />
-        </div>
-      </form>
       <div className="lg:flex items-center justify-center hidden grow ">
         <nav>
           <ul className="flex space-x-7">

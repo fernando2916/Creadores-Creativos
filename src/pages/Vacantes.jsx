@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -141,16 +141,18 @@ const Vacantes = () => {
                     </h4>
                     <h5 className="mb-1 font-semibold">Descripción</h5>
                     <div className="mb-3">
-                      <p className="text-gray-300 text-justify line-clamp-2">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Autem molestiae amet esse unde hic fuga numquam.
-                        iusto aut, commodi voluptatum eum dolorum dignissimos?
-                        Cumque, deleniti consequatur animi architecto nemo
-                        impedit!{" "}
-                      </p>
-                      <span className="text-link-100 hover:text-link-400 transition-colors">
-                        <Link>Ver más</Link>
-                      </span>
+                      <div>
+                        <p className="text-gray-300 text-justify line-clamp-2">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Autem molestiae amet esse unde hic fuga numquam.
+                          iusto aut, commodi voluptatum eum dolorum dignissimos?
+                          Cumque, deleniti consequatur animi architecto nemo
+                          impedit!{" "}
+                        </p>
+                        <span className="text-link-100 hover:text-link-400 transition-colors">
+                          <Link>Ver más</Link>
+                        </span>
+                      </div>
                     </div>
                   </div>
                   <button className="bg-btn-400 hover:bg-btn-600 p-2 flex text-lg font-semibold mx-auto rounded-md">

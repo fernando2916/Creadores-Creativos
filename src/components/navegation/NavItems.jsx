@@ -23,27 +23,27 @@ import {
 export const servicios = [
   {
     name: "Diseño Gráfico",
-    href: "servicio/diseño-grafico",
+    href: "diseño-grafico",
     icon: <FaPen />,
   },
   {
     name: "Fotografía",
-    href: "servicio/fotografia",
+    href: "fotografia",
     icon: <FaCamera />,
   },
   {
     name: "Diseño y Desarrollo Web",
-    href: "servicio/diseño-y-desarrollo-web",
+    href: "diseño-y-desarrollo-web",
     icon: <FaLaptopCode />,
   },
   {
     name: "Impresión",
-    href: "servicio/impresion",
+    href: "impresion",
     icon: <FaPrint />,
   },
   {
     name: "Asesorias",
-    href: "servicio/asesorias",
+    href: "asesorias",
     icon: <FaChalkboardTeacher />,
   },
 ];

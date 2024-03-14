@@ -27,6 +27,8 @@ import Activar from "../components/auth/Activar";
 import ActivarCuenta from "../components/auth/ActivarCuenta";
 import ConfirmarContraseña from "../components/auth/ConfirmarContraseña";
 import RecuperarContraseña from "../components/auth/RecuperarContraseña";
+import { Error404 } from "../pages/Error404";
+import Carrito from "../pages/Carrito";
 
 function AppRouter() {
   return (
@@ -45,14 +47,11 @@ function AppRouter() {
         <Route path="blog" element={<Blog />} />
         <Route path="tienda" element={<Tienda />} />
         <Route path="cursos" element={<Cursos />} />
-        <Route path="servicio/diseño-grafico" element={<DiseñoGrafico />} />
-        <Route path="servicio/fotografia" element={<Fotografia />} />
-        <Route
-          path="servicio/diseño-y-desarrollo-web"
-          element={<DiseñoWeb />}
-        />
-        <Route path="servicio/impresion" element={<Impresion />} />
-        <Route path="servicio/asesorias" element={<Asesorias />} />
+        <Route path="diseño-grafico" element={<DiseñoGrafico />} />
+        <Route path="fotografia" element={<Fotografia />} />
+        <Route path="diseño-y-desarrollo-web" element={<DiseñoWeb />} />
+        <Route path="impresion" element={<Impresion />} />
+        <Route path="asesorias" element={<Asesorias />} />
         <Route path="sobre-nosotros" element={<Empresa />} />
         <Route path="contacto" element={<Contacto />} />
         <Route path="recursos" element={<Recursos />} />
@@ -65,20 +64,23 @@ function AppRouter() {
         <Route path="terminos-y-condiciones" element={<Terminos />} />
         <Route path="envios" element={<Envios />} />
         <Route path="preguntas-frecuentes" element={<Frecuentes />} />
+        <Route path="carrito" element={<Carrito />} />
 
-        {/* Privadas */}
+        {/* Error404 */}
+        <Route path="/*" element={<Error404 />} />
+      </Route>
+
+      {/* Privadas */}
+      <Route path="/" element={<LayoutMain />}>
         <Route index element={<Home />} />
         <Route path="blog" element={<Blog />} />
         <Route path="tienda" element={<Tienda />} />
         <Route path="cursos" element={<Cursos />} />
-        <Route path="servicio/diseño-grafico" element={<DiseñoGrafico />} />
-        <Route path="servicio/fotografia" element={<Fotografia />} />
-        <Route
-          path="servicio/diseño-y-desarrollo-web"
-          element={<DiseñoWeb />}
-        />
-        <Route path="servicio/impresion" element={<Impresion />} />
-        <Route path="servicio/asesorias" element={<Asesorias />} />
+        <Route path="diseño-grafico" element={<DiseñoGrafico />} />
+        <Route path="fotografia" element={<Fotografia />} />
+        <Route path="diseño-y-desarrollo-web" element={<DiseñoWeb />} />
+        <Route path="impresion" element={<Impresion />} />
+        <Route path="asesorias" element={<Asesorias />} />
         <Route path="sobre-nosotros" element={<Empresa />} />
         <Route path="contacto" element={<Contacto />} />
         <Route path="recursos" element={<Recursos />} />
@@ -91,8 +93,10 @@ function AppRouter() {
         <Route path="terminos-y-condiciones" element={<Terminos />} />
         <Route path="envios" element={<Envios />} />
         <Route path="preguntas-frecuentes" element={<Frecuentes />} />
+        <Route path="carrito" element={<Carrito />} />
 
         {/* Error404 */}
+        <Route path="/*" element={<Error404 />} />
       </Route>
     </Routes>
   );
