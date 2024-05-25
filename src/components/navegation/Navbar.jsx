@@ -38,8 +38,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="">
-        <div className="mx-5 md:mx-auto flex items-center">
+      <div>
+        <div className="flex items-center ml-16">
           <Link to="/">
             <img src={Logo} alt="empresa" className="w-[43px] h-auto" />
           </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className="lg:flex items-center justify-center hidden grow ">
         <nav>
           <ul className="flex space-x-7">
-            <li className="hover:text-link-100 transition-all">
+            <li className="hover:text-link-100 transition-colorss">
               <Link to="/" className="flex items-center gap-2">
                 <FaHome />
                 Inicio
@@ -67,28 +67,28 @@ const Navbar = () => {
                 <FaAngleDown
                   className={
                     showMenu
-                      ? "transform rotate-180 transition-all text-link-100"
-                      : "transition-all"
+                      ? "transform rotate-180 transition-colors text-link-100"
+                      : "transition-colors"
                   }
                 />
               </div>
               {showMenu && <SubMenuServicios onClick={toggleMenu} />}
             </li>
 
-            <li className="hover:text-link-100 transition-all">
+            <li className="hover:text-link-100 transition-colors">
               <Link to="/blog" className="flex items-center gap-2">
                 <FaBook />
                 Blog
               </Link>
             </li>
-            <li className="hover:text-link-100 transition-all">
+            <li className="hover:text-link-100 transition-colors">
               <Link to="/tienda" className="flex items-center gap-2">
                 <FaShoppingBag />
                 Tienda
               </Link>
             </li>
-            <li className="text-gray-300 opacity-50 transition-all line-through">
-              <Link to="#cursos" className="flex items-center gap-2">
+            <li className="hover:text-link-100 transition-colors">
+              <Link to="/cursos" className="flex items-center gap-2">
                 <FaVideo />
                 Cursos
               </Link>
@@ -106,8 +106,8 @@ const Navbar = () => {
                 <FaAngleDown
                   className={
                     showMenu2
-                      ? "transform rotate-180 transition-all text-link-100"
-                      : "transition-all"
+                      ? "transform rotate-180 transition-colorss text-link-100"
+                      : "transition-colorss"
                   }
                 />
               </div>

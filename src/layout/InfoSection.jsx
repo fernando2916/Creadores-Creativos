@@ -1,10 +1,10 @@
-export const InfoSection = ({ title, img, children, className }) => {
+export const InfoSection = ({ title, img, children, className, style }) => {
   return (
-    <section className="">
-      <div className="grid grid-cols-1 lg:grid-cols-2 p-2 md:mt-10 items-center ">
-        <div className={`mx-5 lg:mx-24 ${className}`}>{img}</div>
-        <div className=" mx-5 lg:mx-24">
-          <h2 className="font-semibold text-5xl">{title}</h2>
+    <section className={`${className}`}>
+      <div className="grid grid-cols-12 p-6 md:mt-10 items-center max-w-7xl mx-auto ">
+        <div className={` col-span-full lg:col-span-6 ${style}`} >{img}</div>
+        <div className="  col-span-full lg:col-span-6">
+          <h2 className="font-semibold text-3xl md:text-5xl">{title}</h2>
           {children}
         </div>
       </div>

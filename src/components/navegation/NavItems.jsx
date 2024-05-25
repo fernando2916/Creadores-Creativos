@@ -78,27 +78,27 @@ export const company = [
 
 export const menu = [
   { name: "Inicio", href: "/" },
-  { name: "Blog", href: "/blog" },
-  { name: "Tienda", href: "/tienda" },
-  { name: "Cursos", href: "#cursos" },
+  { name: "Blog", href: "blog" },
+  { name: "Tienda", href: "tienda" },
+  { name: "Cursos", href: "cursos" },
 ];
 export const soporte = [
-  { name: "Contacto", href: "/contacto" },
-  { name: "Envios", href: "/envios" },
-  { name: "Facturación", href: "/facturacion" },
-  { name: "Preguntas Frecuentes", href: "/preguntas-frecuentes" },
+  { name: "Contacto", href: "contacto" },
+  { name: "Envios", href: "envios" },
+  { name: "Facturación", href: "facturacion" },
+  { name: "Preguntas Frecuentes", href: "preguntas-frecuentes" },
 ];
 export const compania = [
-  { name: "Nosotros", href: "/sobre-nosotros" },
-  { name: "Recursos", href: "/recursos" },
-  { name: "Vacantes", href: "/bolsa-de-trabajo" },
-  { name: "ESR", href: "/responsabilidad-social" },
+  { name: "Nosotros", href: "sobre-nosotros" },
+  { name: "Recursos", href: "recursos" },
+  { name: "Vacantes", href: "bolsa-de-trabajo" },
+  { name: "ESR", href: "responsabilidad-social" },
 ];
 export const legal = [
-  { name: "Política de compras", href: "/politica-de-compras" },
-  { name: "Política de reembolso", href: "/politica-de-reembolso" },
-  { name: "Aviso de Privacidad", href: "/aviso-de-privacidad" },
-  { name: "Términos y Condiciones", href: "/terminos-y-condiciones" },
+  { name: "Política de compras", href: "politica-de-compras" },
+  { name: "Política de reembolso", href: "politica-de-reembolso" },
+  { name: "Aviso de Privacidad", href: "privacidad" },
+  { name: "Términos y Condiciones", href: "terminos-y-condiciones" },
 ];
 export const social = [
   {

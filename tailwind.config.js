@@ -11,8 +11,9 @@ export default {
           100: "#000c1f",
         },
         cont: {
-          100: "#050d2e",
+          100:"#00122e",
         },
+
         nav: {
           50: "#EEDBFF",
           100: "#DFBDFF",

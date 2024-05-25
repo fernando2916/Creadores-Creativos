@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 
 import {
   FaCircle,
+  FaHeart,
+  FaSearch,
   // FaHeart,
   FaShoppingCart,
   FaUserCircle,
 } from "react-icons/fa";
-import DropAuth from "../ui/DropAuth";
+import DropAuth from "../../pages/autenticacion/components/DropAuth";
 
 const AuthItems = ({ isAuth }) => {
   const [showMenu4, setShowMenu4] = useState(false);
@@ -22,7 +24,17 @@ const AuthItems = ({ isAuth }) => {
     <div>
       {isAuth ? (
         <div>
-          <ul className="flex gap-x-3 box-content">
+          <ul className="flex gap-x-2 box-content">
+             <li className="flex items-center p-2">
+              <button>
+                <FaSearch className="text-2xl" />
+              </button>
+            </li>
+             <li className="flex items-center p-2">
+              <button>
+                <FaHeart className="text-2xl" />
+              </button>
+            </li>
             <li className="relative p-2.5">
               <Link to="/carrito">
                 <FaShoppingCart className="text-2xl" />
@@ -42,14 +54,19 @@ const AuthItems = ({ isAuth }) => {
           </ul>
         </div>
       ) : (
-        <div className="flex items-center gap-3 justify-center">
-          <ul className="flex md:gap-x-3 box-content">
-            {/* <li className="2xl:flex hidden items-center">
+        <div className="flex items-center justify-center">
+            <ul className="flex md:gap-x-2 box-content">
+              <li className="flex items-center p-2">
+              <button>
+                <FaSearch className="text-2xl" />
+              </button>
+            </li>
+            <li className="flex items-center p-2">
               <button>
                 <FaHeart className="text-2xl" />
               </button>
-            </li> */}
-            <li className="relative py-2.5 lg:px-2">
+            </li>
+            <li className="relative p-2">
               <Link to="carrito">
                 <FaShoppingCart className="text-2xl" />
               </Link>
@@ -57,7 +74,7 @@ const AuthItems = ({ isAuth }) => {
             </li>
           </ul>
           <Link to="/crear-cuenta">
-            <button className="hover:text-link-100 hidden 2xl:flex font-medium transition-all">
+            <button className="hover:text-link-100 hidden 2xl:flex font-medium transition-all mx-2">
               Crear Cuenta
             </button>
           </Link>

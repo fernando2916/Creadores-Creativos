@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  touch-action: pan-y
+}
+
+input[type='radio'] {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 1px;
 }

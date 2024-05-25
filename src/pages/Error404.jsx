@@ -16,16 +16,16 @@ export const Error404 = () => {
           </p>
         </div>
         <div className="flex gap-x-6 mt-10 items-center justify-center">
-          <button className="bg-btn-600 hover:bg-btn-400 transition-colors duration-150 px-3 py-2 rounded-md text-lg ">
+          <button className="bg-btn-600 hover:bg-btn-400 transition-colors duration-150 px-3 py-2 rounded-md text-lg font-semibold">
             <Link to="/" className="flex items-center gap-2">
               <FaHome />
               Ir inicio
             </Link>
           </button>
-          <button className=" hover:text-link-200 transition-colors duration-150 px-3 py-2 rounded-md text-lg ">
-            <Link to="" className="flex items-center gap-2">
+          <button className=" hover:text-link-200 px-3 py-2 text-lg font-semibold">
+            <Link to="/contacto" className="flex items-center gap-2">
               Contáctanos
-              <FaAngleRight />
+              <FaAngleRight className="text-2xl" />
             </Link>
           </button>
         </div>

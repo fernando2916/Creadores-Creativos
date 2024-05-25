@@ -16,7 +16,6 @@ Actualmente, hay dos complementos oficiales disponibles:
 # Tecnologias
 
 - Tailwindcss / postcss (https://tailwindcss.com/docs/guides/vite)
-- @tailwindcss/forms (https://github.com/tailwindlabs/tailwindcss-forms)
 - React-icons (https://react-icons.github.io/react-icons)
 - React-router-dom (https://reactrouter.com/en/main)
 - Swiper (https://swiperjs.com/element)

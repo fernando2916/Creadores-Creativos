@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { FaAngleRight, FaSearch, FaTimes, FaUser } from "react-icons/fa";
+import { FaAngleRight, FaTimes, FaUser } from "react-icons/fa";
 import SideAuthItems from "./SideAuthItems";
 import SideItems from "./SideItems";
 
@@ -47,8 +47,8 @@ const SideBar = ({ onClick: toggleMenu, showMenu, isAuth }) => {
                     <span className="text-lg font-semibold ">
                       Entra a tu cuenta
                     </span>
-                    <p className="text-xs text-gray-300">
-                      Podrás comprar un artículo o continuar con tu aprendizaje.
+                    <p className="text-xs text-justify text-gray-300">
+                      Podrás comprar un artículo, comentar una publicación o continuar con tu aprendizaje.
                     </p>
                   </div>
                 </div>
@@ -60,16 +60,7 @@ const SideBar = ({ onClick: toggleMenu, showMenu, isAuth }) => {
               </div>
             )}
           </div>
-          <form>
-            <div className="py-3 relative px-3">
-              <input
-                placeholder="Buscar..."
-                type="text"
-                className="w-full p-2 pl-10 rounded-md bg-transparent outline-none border-2 border-link-100"
-              />
-              <FaSearch className="absolute top-6 left-6 text-btn-200 text-[20px]" />
-            </div>
-          </form>
+
           {isAuth ? (
             <SideAuthItems onClick={toggleMenu} />
           ) : (

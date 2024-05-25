@@ -9,8 +9,12 @@ export const authSlice = createSlice({
     message: undefined,
     errorMensage: undefined,
   },
-  reducers: {},
+  reducers: {
+    onChecking: (state) => {
+      state.status = 'checking';
+    }
+  },
 });
 
 // Action creators are generated for each case reducer function
-export const { increment } = authSlice.actions;
+export const { onChecking } = authSlice.actions;

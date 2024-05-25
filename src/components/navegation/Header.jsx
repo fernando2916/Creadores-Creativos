@@ -17,7 +17,7 @@ const Header = () => {
       {/* SIDEBAR */}
       <SideBar onClick={toggleMenu} showMenu={showMenu} isAuth={isAuth} />
       {/* NAVBAR DESKTOP */}
-      <div className="flex fixed justify-between z-30 gap-x-3 w-full bg-nav-900 py-3 px-1 md:px-5">
+      <div className="flex fixed justify-between z-30 w-full bg-nav-900 py-3 px-1 md:px-2.5">
         <div className="lg:hidden">
           {showMenu ? (
             <button

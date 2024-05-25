@@ -1,0 +1,48 @@
+import TypewriterComponent from "typewriter-effect";
+import HeaderImpresion from "../../assets/plotter.webp";
+
+export const Header = () => {
+  return (
+    <header>
+      <div className="pt-[4rem] relative bg-cover md:h-[65rem] z-10">
+        <img
+          src={HeaderImpresion}
+          alt="diseñadores"
+          className="opacity-30 h-full w-full object-cover "
+        />
+        <div className="absolute w-full h-full flex flex-col top-0 items-center justify-center ">
+          <div className="text-center p-3 space-y-3 md:space-y-7 relative lg:-top-24">
+            <span className=" text-link-100 font-bold text-sm md:text-3xl">
+              Agencia de Diseño Gráfico
+            </span>
+            <h3 className=" text-xl md:text-7xl xl:text-8xl font-extrabold">
+              Servicio de Impresión -{" "}
+            </h3>
+            <div className="text-link-100 text-3xl md:text-7xl xl:text-8xl font-extrabold md:mt-1">
+              <TypewriterComponent
+                options={{
+                  strings: [
+                    "Serigrafía",
+                    "Sublimación",
+                    "Offset Digital",
+                    "Corte de Vinil",
+                    "Bordado",
+                    "Grabado Láser",
+                    "Impresión Personalizada",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 55,
+                  deleteSpeed: 20
+                }}
+              />
+            </div>
+            <p className="text-sm md:text-xl">
+              Servicios 360º: desde el diseño hasta el producto final.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};

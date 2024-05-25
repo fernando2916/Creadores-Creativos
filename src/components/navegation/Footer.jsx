@@ -90,8 +90,8 @@ const Footer = () => {
                 <input
                   required
                   type="email"
-                  placeholder="correo@correo.com"
-                  className="bg-transparent border-2 placeholder:text-white border-link-100 p-2 focus:shadow-md focus:shadow-link-200 rounded-md mt-3 md:mt-2 outline-none w-full md:w-[70%]"
+                  placeholder="Ingresa tu Correo Electrónico"
+                  className="bg-transparent border-2 placeholder:text-gray-400 border-link-100 p-2 focus:shadow-md focus:shadow-link-200 rounded-md mt-3 md:mt-2 outline-none w-full md:w-[70%]"
                 />
                 <button className="bg-btn-400 hover:bg-btn-600 transition-all flex gap-1 items-center p-2 rounded-md mt-3 md:mt-2 text-md font-medium justify-center w-full md:w-[30%]">
                   <FaEnvelope />

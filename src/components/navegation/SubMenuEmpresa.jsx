@@ -1,5 +1,5 @@
 import { company } from "../navegation/NavItems";
-import { ListMenu } from "../ui/ListMenu";
+import { ListMenu } from "../../pages/autenticacion/components/ListMenu";
 
 export const SubMenuEmpresa = ({ onClick: handleShowMenu }) => {
   return (
