@@ -10,7 +10,7 @@ export const InfoTienda = () => {
           {" "}
           Más vendidos
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-5 gap-8 mx-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-5 gap-8">
           {/* ITEM */}
           <Link to='/tienda/30'>
           

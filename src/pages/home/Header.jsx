@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Typewriter from "typewriter-effect";
 import { FaEnvelope } from "react-icons/fa";
 import Maquina from "../../assets/maquina.svg";
 
@@ -10,25 +9,6 @@ export const Header = () => {
         <div className="grid place-content-center p-10 gap-y-3 lg:mx-24">
           <div className="text-5xl font-semibold text-left">
             Emprendedores Creativos &copy;
-            <div className="text-5xl  mt-3 font-extrabold">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Diseño Gráfico",
-                    "Fotografía",
-                    "Diseño Web",
-                    "Desarrollo Web",
-                    "Publicidad",
-                    "Asesorias",
-                    "Impresión",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  delay: 85,
-                  deleteSpeed: 20
-                }}
-              />
-            </div>
             <p className="py-3 text-white text-base font-normal text-justify">
               Una identidad visual correctamente desarrollada, llamara la
               atención de tus clientes y lograra que se acuerden de ti a futuro,
@@ -42,6 +22,7 @@ export const Header = () => {
                 Contacto
               </button>
             </Link>
+
           </div>
         </div>
         <div className="md:flex justify-center bg-center w-auto">

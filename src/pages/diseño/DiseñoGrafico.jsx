@@ -1,4 +1,4 @@
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import {
   FaCircle,
   // FaHandshake,
@@ -10,16 +10,16 @@ import {
   FaCheck,
 } from "react-icons/fa";
 import { FaShield } from "react-icons/fa6";
-import { InfoSection } from "../../layout/InfoSection";
+import { InfoSection } from "./components/InfoSection";
 import diseñadora from "../../assets/diseñadora.svg";
 import diseñador from "../../assets/diseñador.svg";
 import { Items2 } from "./Items2";
 import { Header } from "./Header";
 
 const DiseñoGrafico = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <main>

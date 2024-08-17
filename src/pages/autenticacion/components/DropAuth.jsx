@@ -14,7 +14,7 @@ import { ListItem } from "./ListItem";
 
 const DropAuth = () => {
   return (
-    <div className="bg-nav-900 w-[280px] p-2 absolute z-50 rounded-lg -right-7 top-10">
+    <div className="bg-nav-900 w-[280px] p-2 absolute z-50 rounded-lg -right-5 top-10">
       <div className="p-4 flex items-center gap-3">
         <div>
           <Link to="/mi-cuenta">

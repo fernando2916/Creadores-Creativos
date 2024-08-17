@@ -2,6 +2,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthSection } from "./components/AuthSection";
 import { FaLock, FaLockOpen, FaUser } from "react-icons/fa";
+import { useForm } from "../../hooks/useForm";
+import { useAuthStore } from "../../hooks/useAuthStore";
+
+const loginFormFields = {
+  loginEmail:    "",
+  loginPassword: "",
+};
+
 
 const Ingresar = () => {
   useEffect(() => {
@@ -10,15 +18,38 @@ const Ingresar = () => {
   const [isSignUp, setIsSignUp] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
 
+  const { startLogin } = useAuthStore();
+
+
+  const {
+    loginEmail,
+    loginPassword,
+    onInputChange,
+  } = useForm(loginFormFields);
+
+  const loginSubmit = (event) => {
+    event.preventDefault();
+    startLogin({
+      email: loginEmail,
+      password: loginPassword,
+    })
+  }
+
+
+
   return (
     <AuthSection title="Ingresa a tu cuenta">
-      <form className="pt-3 space-y-5">
+       
+      <form className="pt-3 space-y-5" noValidate onSubmit={loginSubmit}>
         <div className=" flex flex-col space-y-2">
           <label className="font-medium text-lg">Correo Electrónico</label>
           <input
             type="email"
             placeholder="Ingresa tu Correo Electrónico"
             className="bg-transparent p-2 rounded-md border-link-100 border-2 outline-none focus:shadow-md focus:shadow-link-200"
+            name="loginEmail"
+            value={loginEmail}
+            onChange={onInputChange}
           />
         </div>
         <div className=" flex flex-col space-y-2">
@@ -28,6 +59,9 @@ const Ingresar = () => {
               type={showPassword ? "text" : "password"}
               placeholder="Ingresa una contraseña"
               className="bg-transparent p-2 rounded-md border-link-100 border-2 outline-none focus:shadow-md focus:shadow-link-200 w-full"
+              name="loginPassword"
+              value={loginPassword}
+              onChange={onInputChange}
             />
             <button
               className="absolute right-3 top-3 text-xl outline-none"

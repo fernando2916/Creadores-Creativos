@@ -37,4 +37,4 @@ pnpm dev
 
 Abre [http://localhost:5173](http://localhost:5173) con tu navegador para ver el resultado.
 
-# Django
+# Laravel - PHP

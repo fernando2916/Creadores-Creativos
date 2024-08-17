@@ -1,9 +1,10 @@
 // import { useEffect } from "react";
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { Link } from "react-router-dom";
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { FaAngleDown, FaAngleRight, FaBox, FaCalendar, FaCheck, FaCircle, FaDownload, FaFile, FaMedal, FaPlayCircle, FaShoppingCart, FaStar, FaTrophy, FaTv, FaUserCircle, FaUserFriends, FaYoutube} from "react-icons/fa";
 import { FaChartSimple, FaEarthAmericas } from "react-icons/fa6";
 
+import prueba from '../../../assets/marketing.webp'
 export const ItemDetailView = () => {
   //   useEffect(() => {
   //   window.scrollTo(0, 0);
@@ -80,10 +81,11 @@ export const ItemDetailView = () => {
             </div>
           </div>
           <div className="col-span-full lg:col-span-6 p-5">
-            <video
+            <img src={prueba} alt="" className="rounded-lg aspect-auto" />
+            {/* <video
               src=""
               className="rounded-md border-2 w-full h-[14rem] md:h-[19.2rem] md:mt-12 justify-center items-center"
-            ></video>
+            ></video> */}
           </div>
         </div>
       </header>

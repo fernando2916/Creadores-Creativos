@@ -21,9 +21,8 @@ export const Header = () => {
                 strings: [
                   "Fotografía Corporativa",
                   "Fotografía de Retrato",
-                  "Fotografía de Porducto",
-                  "Fotografía de Arquitectura",
-                  "Fotografía de Paisaje",
+                  "Fotografía de Producto",
+                  "Fotografía de Estudio",
                 ],
                 autoStart: true,
                 loop: true,

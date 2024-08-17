@@ -59,14 +59,14 @@ const WorkModal = () => {
               </div>
               <div className="">
                 <label className="font-medium text-base">
-                  Sube tu CV y Portafólio
+                  Sube tu CV y Portafólio (.PDF)
                 </label>
-                <input type="file" name="" id="" />
+                <input type="file" name="" id="" className="mt-2 bg-transparent" />
               </div>
               <div className=" text-sm md:text-base">
                 <p>Tus datos estan protegidos, puedes encontrar más información en nuestro {' '} 
                   <span className="text-link-100 font-semibold">
-                    <Link to='/aviso-de-privacidad'>Aviso de Privacidad</Link>
+                    <Link to='/privacidad'>Aviso de Privacidad</Link>
                   </span>
                 </p>
               </div>

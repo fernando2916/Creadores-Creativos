@@ -7,6 +7,7 @@ function AppRouter() {
 
   const status = 'Authenticated'
 
+
   if (status === 'checking') {
     return (
       <>

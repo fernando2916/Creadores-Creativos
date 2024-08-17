@@ -1,3 +1,4 @@
+import Fotografia from '../../assets/fotografía/fotografia.webp'
 
 export const InfoFoto = () => {
   return (
@@ -6,11 +7,11 @@ export const InfoFoto = () => {
       
       <div className="grid grid-cols-12 gap-5 mt-5">
         <div className="col-span-full md:col-span-6 ">
-          <img src="" alt="img" />
+          <img src={Fotografia} alt="img" className='rounded-md' />
         </div>
         <div className="col-span-full md:col-span-6 ">
           <div className="">
-            <h2 className="text-center text-3xl font-semibold">Empresa de Fotografía</h2>
+            <h2 className="text-center text-3xl font-semibold">Agencia de Fotografía</h2>
             <p className="text-lg text-justify pt-2">En <strong>Emprendedores Foto</strong> generamos <strong>sesiones fotográficas</strong> para captar la atención visual de tu cliente.</p>
             <p className="text-lg text-justify pt-2">No importa si es en un banner en una página web, una foto de tu servicio o producto en acción o un anuncio en tu local, etc. La fotografía está presente y es clave para que puedas mostrar el valor de tu marca hacia tus potenciales clientes, e incluso puede dar la confianza que necesita para generar una compra contigo.</p>
           </div>

@@ -5,6 +5,16 @@ import { FaLock, FaLockOpen, FaSignInAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import PoliticasModal from "./modales/PoliticasModal";
 import TerminosModal from "./modales/TerminosModal";
+import { useForm } from "../../hooks/useForm";
+
+
+const registerFormFields = {
+  registerName:         "",
+  registerLastName:     "",
+  registerEmail:        "",
+  registerPassword:     "",
+  registerPassword2:    "",
+};
 
 const Registro = () => {
   useEffect(() => {
@@ -15,32 +25,76 @@ const Registro = () => {
   const [showPassword2, setShowPassword2] = useState(false);
   const [isSignUp, setIsSignUp] = useState(true);
 
+  const {
+    registerName,
+    registerLastName,
+    registerEmail,
+    registerPassword,
+    registerPassword2,
+    onInputChange,
+  } = useForm(registerFormFields);
+
+  const registerSubmit = (event) => {
+    event.preventDefault();
+    console.log({
+      registerName,
+      registerLastName,
+      registerEmail,
+      registerPassword,
+      registerPassword2,
+    })
+  }
+
   return (
     <AuthSection title="Crear tu Cuenta">
-      <form className="pt-3 space-y-3 flex flex-col">
+      <form className="pt-3 space-y-3 flex flex-col" noValidate onSubmit={registerSubmit}>
         <div className=" flex flex-col space-y-2">
-          <label className="font-medium text-lg">Nombre Completo</label>
+          <label className="font-medium text-lg" htmlFor="nombre">Nombre Completo</label>
           <input
+            id="nombre"
             type="text"
-            placeholder="Ingresa tu Nombre Completo "
+            placeholder="Ingresa tu Nombre "
             className="bg-transparent p-2 rounded-md border-link-100 border-2 outline-none focus:shadow-md focus:shadow-link-200"
+            name="registerName"
+            value={registerName}
+            onChange={onInputChange}
           />
         </div>
         <div className=" flex flex-col space-y-2">
-          <label className="font-medium text-lg">Correo Electrónico</label>
+          <label className="font-medium text-lg" htmlFor="apellido">Apellido</label>
           <input
+          id="apellido"
+            type="text"
+            placeholder="Ingresa tu apellido "
+            className="bg-transparent p-2 rounded-md border-link-100 border-2 outline-none focus:shadow-md focus:shadow-link-200"
+            name="registerLastName"
+            value={registerLastName}
+            onChange={onInputChange}
+          />
+        </div>
+        <div className=" flex flex-col space-y-2">
+          <label className="font-medium text-lg" htmlFor="correo">Correo Electrónico</label>
+          <input
+          id="correo"
             type="email"
             placeholder="Ingresa tu Correo Electrónico"
             className="bg-transparent p-2 rounded-md border-link-100 border-2 outline-none focus:shadow-md focus:shadow-link-200"
+            name="registerEmail"
+            value={registerEmail}
+            onChange={onInputChange}
           />
         </div>
         <div className=" flex flex-col space-y-2">
-          <label className="font-medium text-lg">Contraseña</label>
+          <label className="font-medium text-lg" htmlFor="contraseña">Contraseña</label>
           <div className="relative">
             <input
+            id="contraseña"
               type={showPassword ? "text" : "password"}
               placeholder="Ingresa una contraseña"
               className="bg-transparent p-2 rounded-md border-link-100 border-2 outline-none w-full focus:shadow-md focus:shadow-link-200"
+              name="registerPassword"
+              value={registerPassword}
+              onChange={onInputChange}
             />
             <button
               className="absolute right-3 top-3 text-xl outline-none"
@@ -51,12 +105,16 @@ const Registro = () => {
           </div>
         </div>
         <div className=" flex flex-col space-y-2">
-          <label className="font-medium text-lg">Confirmar Contraseña</label>
+          <label className="font-medium text-lg" htmlFor="confirmar contraseña">Confirmar Contraseña</label>
           <div className="relative">
             <input
+            id="confirmar contraseña"
               type={showPassword2 ? "text" : "password"}
               placeholder="Repite la contraseña"
               className="bg-transparent p-2 rounded-md border-link-100 border-2 outline-none w-full focus:shadow-md focus:shadow-link-200"
+              name="registerPassword2"
+              value={registerPassword2}
+              onChange={onInputChange}
             />
             <button
               className="absolute right-3 top-3 text-xl outline-none"

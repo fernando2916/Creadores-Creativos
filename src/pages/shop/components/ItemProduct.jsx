@@ -6,7 +6,7 @@ import { Product } from "./ItemsProducts"
 export const ItemProduct = () => {
 const [count, setCount] = useState(0)
   return (
-     <section aria-labelledby="cart-heading" className="lg:col-span-7">
+     <section aria-labelledby="cart-heading" className="col-span-full md:col-span-6 lg:col-span-7">
             <h2 id="cart-heading" className="sr-only">
               Artículos en su carrito de compras
             </h2>
@@ -21,7 +21,7 @@ const [count, setCount] = useState(0)
                     <img
                       src={product.imageSrc}
                       alt={product.imageAlt}
-                      className="w-20 rounded-md object-center object-cover sm:w-48 sm:h-48"
+                      className="w-16 rounded-md object-center object-cover sm:w-12 sm:h-12"
                     />
                   </div>
 
@@ -52,7 +52,7 @@ const [count, setCount] = useState(0)
                       </div>
 
                       <div className="mt-5 sm:mt-0 sm:pr-9">
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 translate-y-1/2">
                           <button
                             type="button"
                             className={`${count === 0 ? "hidden" : "text-xs"}`}
@@ -63,7 +63,7 @@ const [count, setCount] = useState(0)
 
                           <input
                             type="number"
-                            className="text-lg outline-none rounded-md w-28 px-2 py-1 md:px-5 md:py-2 bg-transparent border-2 border-link-100 placeholder:text-white"
+                            className="text-lg outline-none rounded-md md:w-20 px-2 py-1 md:px-5 md:py-2 bg-transparent border-2 border-link-100 placeholder:text-white"
                             placeholder={count}
                           />
 

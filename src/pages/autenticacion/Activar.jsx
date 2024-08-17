@@ -8,6 +8,7 @@ const Activar = () => {
 
   return (
     <AuthSection title={"Activación de cuenta"}>
+
       <div className="">
         <p className=" text-xl ">Tu cuenta espera para ser activada.</p>
         <p className="py-5 text-justify">
