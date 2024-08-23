@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import HeaderAsesorias from "../../assets/tutor.webp";
+import { toast } from "sonner";
 
 const Asesorias = () => {
   useEffect(() => {
@@ -26,6 +27,22 @@ const Asesorias = () => {
           </div>
         </div>
       </header>
+
+      <main>
+        <div>
+          <button onClick={
+            () => toast('prueba', {
+              description: 'prueba del toaster',
+              action: {
+                label: 'undo',
+                onClick: () => console.log('undo')
+              }
+            })
+            }>
+Show Toast
+          </button>
+        </div>
+      </main>
     </>
   );
 };

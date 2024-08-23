@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { FaCalendar, FaClock, FaDollarSign } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import WorkModal from "./WorkModal";
 import { ItemsVacantes } from "./ItemsVacantes";
-import { WorkInfo } from "./WorkInfo";
 import { FaLocationDot } from "react-icons/fa6";
+import { WorkInfo } from "./WorkInfo";
+import { WorkModal } from "./WorkModal";
 
 const Vacantes = () => {
   useEffect(() => {

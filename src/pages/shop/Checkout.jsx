@@ -1,12 +1,8 @@
 import { useState } from "react";
-import {
-  Listbox,
-  ListboxButton,
-  ListboxOptions,
-  ListboxOption,
-} from "@headlessui/react";
+
 import { FaCheck, FaAngleDown } from "react-icons/fa";
 import { Breadcrumb } from "./components/Breadcrumb";
+import { Link } from "react-router-dom";
 
 const tipos = [
   { id: 0, name: "Estado de México" },
@@ -27,7 +23,7 @@ export const Checkout = () => {
           <form>
             <div className="flex justify-between border-b pb-3 pl-2">
               <h3>Cuenta</h3>
-              <button className="text-link-100 underline">Inciar sesión</button>
+              <Link to='/ingresar' className="text-link-100 underline">Inciar sesión</Link>
             </div>
 
             <div className="space-y-3">
@@ -100,24 +96,7 @@ export const Checkout = () => {
                       Estado
                     </span>
                   </label>
-                  <Listbox value={selected} onChange={setSelected}>
-                    <ListboxButton className="md:block w-full border-link-100 border-2 outline-none focus:shadow-md focus:shadow-link-200 rounded-md pt-4 pb-1 pr-8 pl-3 text-left text-sm">
-                      {selected.name}
-                      <FaAngleDown className="absolute right-3 top-1/2 transform -translate-y-1/2" />
-                    </ListboxButton>
-                    <ListboxOptions className="absolute z-20 w-full ml-0.5 py-1 mt-11 overflow-auto bg-nav-900 rounded-lg shadow-lg shadow-link-700">
-                      {tipos.map((item, index) => (
-                        <ListboxOption
-                          key={index}
-                          value={item}
-                          className="group flex cursor-default items-center gap-2 rounded-lg py-1.5 px-3 select-none data-[focus]:bg-nav-700"
-                        >
-                          <FaCheck className="invisible size-4 fill-white group-data-[selected]:visible" />
-                          <div className="text-sm text-white">{item.name}</div>
-                        </ListboxOption>
-                      ))}
-                    </ListboxOptions>
-                  </Listbox>
+
                 </div>
               </div>
             </div>

@@ -20,11 +20,9 @@ import PoliticaRemb from "../pages/empresa/PoliticaRemb";
 import PoliticaPriv from "../pages/empresa/PoliticaPriv";
 import Terminos from "../pages/empresa/Terminos";
 import Envios from "../pages/empresa/Envios";
-import Frecuentes from "../pages/empresa/Frecuentes";
+import {Frecuentes} from "../pages/empresa/Frecuentes";
 import Registro from "../pages/autenticacion/Registro";
 import Ingresar from "../pages/autenticacion/Ingresar";
-import Activar from "../pages/autenticacion/Activar";
-import ActivarCuenta from "../pages/autenticacion/ActivarCuenta";
 import ConfirmarContraseña from "../pages/autenticacion/ConfirmarContraseña";
 import RecuperarContraseña from "../pages/autenticacion/RecuperarContraseña";
 import { InfoPost } from "../pages/blog/InfoPost";
@@ -35,19 +33,24 @@ import { InfoProduct } from "../pages/tienda/InfoProduct";
 import { PrivacySummary } from "../pages/empresa/components/privacidad/pages/PrivacySummary";
 import { ItemDetailView } from "../pages/cursos/Components/ItemDetailView";
 import { AuthLayout } from "../layout/AuthLayout";
+import ActivarCuenta from "@/pages/autenticacion/ActivarCuenta";
+import ResetearCodigo from "@/pages/autenticacion/ResetarCodigo";
+import { Activar } from "@/pages/autenticacion/Activar";
 
 export const PublicRoutes = () => {
   return (
     <Routes>
       {/* Authenticacion */}
-      <Route path="/" element={<AuthLayout/>}>
-        <Route path="crear-cuenta" element={<Registro />} />
-        <Route path="activar-cuenta" element={<Activar />} />
-        <Route path="activar" element={<ActivarCuenta />} />
-        <Route path="ingresar" element={<Ingresar />} />
-        <Route path="restablecer-contraseña" element={<RecuperarContraseña />} />
-        <Route path="nueva-contraseña" element={<ConfirmarContraseña />} />
+      <Route path="/auth" element={<AuthLayout/>}>
+        <Route path="/auth/crear-cuenta" element={<Registro />} />
+        <Route path="/auth/activacion-en-espera" element={<Activar />} />
+        <Route path="/auth/activar_cuenta/:id" element={<ActivarCuenta />} />
+        <Route path="/auth/resetear-codigo" element={<ResetearCodigo />} />
+        <Route path="/auth/ingresar" element={<Ingresar />} />
+        <Route path="/auth/restablecer-contraseña" element={<RecuperarContraseña />} />
+        <Route path="/auth/nueva_contraseña/:id" element={<ConfirmarContraseña />} />
       </Route>
+      
       <Route path="/" element={<LayoutMain />}>
 
         {/* Generales */}
@@ -84,7 +87,7 @@ export const PublicRoutes = () => {
 
         {/* Error404 */}
         {/* <Route path="/*" element={<Error404 />} /> */}
-        <Route path="/*" element={<Navigate to='ingresar'/>} />
+        <Route path="/*" element={<Navigate to='/auth/ingresar'/>} />
       </Route>
     </Routes>
   );

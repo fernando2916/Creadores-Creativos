@@ -1,6 +1,6 @@
 import {  FaPaypal, FaShoppingCart, FaStar, FaHeart } from 'react-icons/fa'
 import prueba from '../../../assets/tienda/IM MEXICO.jpg'
-import { Button, Stack } from '@chakra-ui/react';
+import { Button } from '../../../components/ui/button';
 
 export const HeaderItemPost = () => {
   return (
@@ -53,42 +53,6 @@ export const HeaderItemPost = () => {
                 <div className="">
                   <p className="font-semibold">Talla:</p>
                   <div className="pt-3 space-x-3">
-                    <Stack direction={'row'}>
-
-                      <Button 
-                        isDisabled
-                    size='lg'
-                    variant={'unsyled'}
-                      className="p-3 bg-btn-400 hover:bg-btn-600 transition-colors duration-150 rounded-md text-xl font-semibold"
-                      type="button"
-                    >
-                      CH
-                    </Button>
-                    <Button 
-                    size='lg'
-                    variant={'unsyled'}
-                      className="p-3 bg-btn-400 hover:bg-btn-600 transition-colors duration-150 rounded-md text-xl font-semibold"
-                      type="button"
-                    >
-                      MD
-                    </Button>
-                    <Button 
-                    size='lg'
-                    variant={'unsyled'}
-                      className="p-3 bg-btn-400 hover:bg-btn-600 transition-colors duration-150 rounded-md text-xl font-semibold"
-                      type="button"
-                    >
-                      GD
-                    </Button>
-                    <Button 
-                    size='lg'
-                    variant={'unsyled'}
-                      className="p-3 bg-btn-400 hover:bg-btn-600 transition-colors duration-150 rounded-md text-xl font-semibold"
-                      type="button"
-                    >
-                      XGD
-                    </Button>
-                    </Stack>
                   </div>
                 </div>
                 {/* COLORES */}

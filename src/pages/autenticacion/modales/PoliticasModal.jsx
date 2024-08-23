@@ -1,47 +1,23 @@
-import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalOverlay,
-  useDisclosure,
-} from "@chakra-ui/react";
-import { FaTimes } from "react-icons/fa";
+// import { Button } from "@/components/ui/button"
 
-const PoliticasModal = () => {
-  const { onClose, isOpen, onOpen } = useDisclosure();
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "../../../components/ui/dialog"
+
+
+
+export const PoliticasModal = () => {
   return (
-    <>
-      <button
-        type="button"
-        onClick={onOpen}
-        className="text-link-100 font-semibold mx-1"
-      >
-        Aviso de Privacidad
-      </button>
-      <Modal
-        isCentered
-        onClose={onClose}
-        isOpen={isOpen}
-        motionPreset="scale"
-        size="sm"
-      >
-        <ModalOverlay />
-        <ModalContent mx={5} onFocus={() => null}>
-          <ModalBody className="bg-nav-900 relative">
-            {/* HEADER */}
-            <div className=" flex justify-center py-7 items-center">
-              <h2 className="text-lg lg:text-2xl font-bold">
-                Aviso de Privacidad
-              </h2>
-              <button
-                onClick={onClose}
-                className=" bg-btn-400 hover:bg-btn-600 transition-colors duration-150 p-2 rounded-md outline-none absolute right-3 top-3"
-              >
-                <FaTimes className="text-xl" />
-              </button>
-            </div>
-            {/* CONTENT */}
-            <div className="overflow-y-scroll h-[30rem]">
+    <Dialog>
+      <DialogTrigger asChild>
+        <button className="text-link-100 hover:text-link-300 transition-colors duration-150 mx-1">Aviso de Privacidad</button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle> Aviso de Privacidad</DialogTitle>
+          <DialogDescription>
+          Versión vigente: 24 de noviembre, 2023
+          </DialogDescription>
+        </DialogHeader>
+        <div className="overflow-y-scroll h-[30rem]">
               <p className="text-justify">
                 De conformidad con lo previsto en la Ley Federal de Datos
                 Personales de Posesión de los Particulares (en lo sucesivo
@@ -142,12 +118,7 @@ const PoliticasModal = () => {
                 </ul>
               </div>
             </div>
-            {/* FOOTER */}
-          </ModalBody>
-        </ModalContent>
-      </Modal>
-    </>
-  );
-};
-
-export default PoliticasModal;
+      </DialogContent>
+    </Dialog>
+  )
+}

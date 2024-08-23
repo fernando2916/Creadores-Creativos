@@ -1,4 +1,6 @@
-import AgerdarModal from "./Components/AgendarModal";
+import { AgendarModal } from "./Components/AgendarModal";
+
+;
 
 export const BannerContact = () => {
   return (
@@ -18,7 +20,7 @@ export const BannerContact = () => {
               <h2 className="text-center text-2xl font-semibold mb-3">
                 Cotiza agenda tú sesión en el siguiente enlace
               </h2>
-              <AgerdarModal />
+              <AgendarModal/>
             </div>
           </div>
         </div>

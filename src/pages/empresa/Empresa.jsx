@@ -5,7 +5,7 @@ const Empresa = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="pt-[4rem]">
+    <div className="pt-[4.5rem]">
       <h1>Sobre Nosotros</h1>
     </div>
   );

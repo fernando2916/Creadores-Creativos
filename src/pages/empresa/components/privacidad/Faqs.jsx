@@ -1,4 +1,9 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from "@chakra-ui/react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../../../components/ui/accordion"
 import { FaAngleRight } from "react-icons/fa";
 
 export const Faqs = () => {
@@ -11,22 +16,22 @@ export const Faqs = () => {
             Creativos
           </h2>
           <div className="py-5">
-            <Accordion allowToggle>
+            <Accordion type="single" collapsible>
               <AccordionItem border={'none'}>
                 <h2>
-                  <AccordionButton >
+                  <AccordionTrigger >
                     <Box as="span" flex="1" textAlign="left" padding={3}>
                       ¿Cómo elimino mis datos personales?
                     </Box>
                     <AccordionIcon />
-                  </AccordionButton>
+                  </AccordionTrigger>
                 </h2>
-                <AccordionPanel pb={4} >
+                <AccordionContent pb={4} >
                   <div className="space-y-3 mx-3">
                     <p className="text-justify text-sm">Si decides cancelar tu cuenta, mantendremos tus datos personales durante el tiempo mínimo necesario para cumplir su propósito inicial de recolección o por requerimientos legales, pero luego de esto tus datos serán eliminados de nuestra plataforma.</p>
                   <button type="button" className="flex items-center gap-2 text-sm text-link-100 hover:text-link-300 transition-colors duration-150">Consultar más información <FaAngleRight/></button>
                   </div>
-                </AccordionPanel>
+                </AccordionContent>
               </AccordionItem>
 
               <AccordionItem border={'none'}>

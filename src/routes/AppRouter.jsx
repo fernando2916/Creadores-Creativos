@@ -1,29 +1,25 @@
-
-import {  Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { PrivateRoutes } from "./PrivateRoutes";
 import { PublicRoutes } from "./PublicRoutes";
+import { useAuthStore } from "@/hooks";
+import { useEffect } from "react";
 
 function AppRouter() {
+  const { status, refresh_token } = useAuthStore();
 
-  const status = 'Authenticated'
-
-
-  if (status === 'checking') {
-    return (
-      <>
-        <h1>Loading....</h1>
-      </>
-    );
-  }
+  useEffect(() => {
+    refresh_token();
+  }, []);
 
   return (
     <Routes>
-          <Route path="/*" element={<PublicRoutes />} />
+      {(status === "Authenticated") ? (
+        <>
           <Route path="/*" element={<PrivateRoutes />} />
-      {/* {(status === 'Authenticated') ? (
-      // ) : (
-      // ) 
-      // } */}
+        </>
+        ) : (
+          <Route path="/*" element={<PublicRoutes />} />
+      )}
     </Routes>
   );
 }

@@ -1,18 +1,19 @@
 
 import { Outlet } from "react-router-dom";
 
-import { Cabecera } from "../components/navegation/Cabecera";
-import Footer from "../components/navegation/Footer";
 
 import { FaAngleUp } from "react-icons/fa6";
 import ScrollToTop from "react-scroll-to-top";
+
+import { Header } from "@/components/navegation/Cabecera";
+import Footer from "@/components/navegation/Footer";
 
 export default function LayoutMain() {
 
   return (
     <>
-      <Cabecera />
-      {/* <Header /> */}
+      <Header />
+
 
       <ScrollToTop
         smooth

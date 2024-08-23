@@ -1,6 +1,7 @@
 import { FaClock, FaStar, FaUserCircle } from "react-icons/fa"
-import { ModalComent } from "./ModalComent"
-import { Progress } from "@chakra-ui/react";
+
+import { Progress } from "../../../components/ui/progress";
+import { Politicas } from "./ModalComent";
 
 export const ComentsItemPost = () => {
   return (
@@ -91,7 +92,7 @@ export const ComentsItemPost = () => {
               </p>
             </div>
             <div className="mt-1">
-              <ModalComent />
+              <Politicas/> 
             </div>
           </div>
           <div className="col-span-full md:w-[50rem] my-5 space-y-5">

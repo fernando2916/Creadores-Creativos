@@ -11,4 +11,14 @@ const creadoresApi = axios.create({
 
 // Todo: configurar interceptores
 
+creadoresApi.interceptors.request.use( config => {
+    const token = localStorage.getItem('token')
+    
+    config.headers = {
+        ...config.headers,
+        Authorization: `Bearer ${token}`,
+    }
+    return config;
+})
+
 export default creadoresApi

@@ -5,7 +5,7 @@ const Esr = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="pt-[4rem]">
+    <div className="pt-[4.5rem]">
       <h1>Responsabilidad Social</h1>
     </div>
   );
