@@ -14,7 +14,6 @@ export const useAuthStore = () => {
     const startRegister = async({
         name, last_name, email, password, password_confirmation
       }) => {
-        console.log(name, last_name, email, password, password_confirmation)
         dispatch( onChecking() );
         try {
           const {data} = await creadoresApi.post('/auth/register', {name, last_name, email, password, password_confirmation})

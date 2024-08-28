@@ -10,7 +10,7 @@ const Blog = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <FeaturedPosts />
         <Posts/>

@@ -7,19 +7,11 @@ import {
   FaClock,
   FaUserCircle,
 } from "react-icons/fa";
-// import { Helmet } from "react-helmet-async";
 
 export const InfoBlog = () => {
   return (
     <>
 
-      {/* <Helmet>
-        <title>Blog - - Emprendedores Creativos </title>
-        <meta
-          name="description"
-          content="Registro"
-        />
-      </Helmet>       */}
       <Section
         className="bg-cont-100 p-10 "
         title="Últimas Entradas"

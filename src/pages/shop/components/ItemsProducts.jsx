@@ -1,4 +1,4 @@
-import equipo from '../../../assets/equipo.webp'
+import equipo from '../../../assets/Equipo.webp'
 
 export const Product = [
   {

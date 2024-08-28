@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Diseñadores from "../../assets/disenadores.webp";
-import Equipo from "../../assets/equipo.webp";
+import Equipo from "../../assets/Equipo.webp";
 
 const Recursos = () => {
   useEffect(() => {

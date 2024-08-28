@@ -8,7 +8,7 @@ export const Politicas = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <button className="text-link-100 hover:text-link-300 transition-colors duration-150 mx-1">Aviso de Privacidad</button>
+        <button className="text-link-100 hover:text-link-300 transition-colors duration-150 mx-1">Opinar</button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>

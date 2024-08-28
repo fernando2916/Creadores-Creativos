@@ -13,13 +13,13 @@ function AppRouter() {
 
   return (
     <Routes>
-      {(status === "Authenticated") ? (
+      {/* {(status === "Authenticated") ? ( */}
         <>
           <Route path="/*" element={<PrivateRoutes />} />
         </>
-        ) : (
+        {/* // ) : ( */}
           <Route path="/*" element={<PublicRoutes />} />
-      )}
+       {/* )} */}
     </Routes>
   );
 }

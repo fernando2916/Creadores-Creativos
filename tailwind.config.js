@@ -21,6 +21,7 @@ module.exports = {
         },
         fondo: {
           100: "#000c1f",
+          // 100: "#0d1a2e",
         },
         cont: {
           100:"#00122e",

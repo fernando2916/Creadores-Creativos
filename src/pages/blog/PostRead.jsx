@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { FaCalendar, FaClock, FaUserCircle } from "react-icons/fa";
 import { ItemsBlog } from "./ItemsBlog";
 
+
 export const PostRead = () => {
-  return (
+
+   return (
     <div>
       <h2 className="mb-4 text-2xl font-semibold">Lo más leído</h2>
       <ul className="flex flex-col gap-8">
@@ -14,7 +16,7 @@ export const PostRead = () => {
               <img
                 src={post.img}
                 alt=""
-                className="col-span-2 rounded-lg overflow-hidden aspect-video h-[9rem] w-[24rem]"
+                className="col-span-2 rounded-lg overflow-hidden aspect-video object-cover h-[9rem] w-[24rem]"
               />
               <div className="col-span-3 space-y-2">
                 <span className="bg-link-500 py-1 rounded-md px-2 text-xs font-semibold">{post.Categoria}</span>

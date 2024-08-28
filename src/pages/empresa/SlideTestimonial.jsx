@@ -15,7 +15,7 @@ const SlideTestimonial = () => {
           slidesPerView={1}
           loop={true}
           modules={[Autoplay, Navigation, Pagination]}
-          autoplay={{ delay: 1500, disableOnInteraction: false }}>
+          autoplay={{ delay: 4500, disableOnInteraction: false }}>
           <SwiperSlide>
             <div className="bg-nav-900 border-2 shadow-2xl shadow-link-500 border-link-500 rounded-lg xl:w-96 md:w-80 ">
               <p className="flex justify-center items-center mx-auto p-8">

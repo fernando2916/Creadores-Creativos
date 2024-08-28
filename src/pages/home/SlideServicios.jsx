@@ -10,13 +10,13 @@ import { ItemServicios } from "./ItemServicios";
 
 const SlideServicios = () => {
   return (
-    <div className="w-80 mx-auto">
+    <div className="w-[324px] mx-auto">
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
         loop={true}
         modules={[Autoplay, Navigation, Pagination]}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}>
+        autoplay={{ delay: 4500, disableOnInteraction: false }}>
         {ItemServicios.map((item) => (
           <SwiperSlide key={item.href}>
             <div className="shadow-2xl h-72 shadow-link-500 p-4 border-double border-2 border-link-500 rounded-lg">

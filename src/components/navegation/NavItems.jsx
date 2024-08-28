@@ -86,7 +86,7 @@ export const social = [
 export const servicios = [
   {
     name: "Diseño Gráfico",
-    href: "/diseno-grafico",
+    href: "/diseño-grafico",
     icon: <FaPen />,
   },
   {
@@ -96,7 +96,7 @@ export const servicios = [
   },
   {
     name: "Diseño y Desarrollo Web",
-    href: "/diseno-y-desarrollo-web",
+    href: "/diseño-y-desarrollo-web",
     icon: <FaLaptopCode />,
   },
   {
@@ -178,7 +178,7 @@ export const SideMenu = [
       id:   '1',
       name: 'Diseño Gáfico',
       icon2: <FaPen/>,
-      href: '/diseno-grafico',
+      href: '/diseño-grafico',
     },
     {
       id:   '2',
@@ -190,7 +190,7 @@ export const SideMenu = [
       id:   '3',
       name: 'Diseño y Desarrollo Web',
       icon2: <FaLaptopCode/>,
-      href: '/diseno-y-desarrollo-web',
+      href: '/diseño-y-desarrollo-web',
     },
     {
       id:   '4',

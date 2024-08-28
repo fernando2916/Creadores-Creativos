@@ -4,7 +4,7 @@ import prueba from '../../../assets/disenadores.webp'
 
 export const RecomendPost = () => {
   return (
-    <div className="px-4 py-12 lg:px-0 lg:py-0">
+    <div className=" py-12 lg:px-0 lg:py-0 mx-5 lg:mx-0">
                       <h3 className="mb-4 font-bold text-lg">Artículos Recomendados</h3>
                       <div className="flex flex-col gap-6">
                           <Link>

@@ -6,7 +6,7 @@ import { PostRead } from "./PostRead";
 export const FeaturedPosts = () => {
     return (
       <>
-        <section>
+        <section className="pt-10">
           <div className="flex flex-col lg:items-start lg:grid lg:grid-cols-2 gap-8 py-16 lg:container mx-auto px-5">
             {PostFeature.map((post) => (
               <Link key={post.Titulo} to="/blog/10">

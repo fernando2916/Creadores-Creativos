@@ -4,9 +4,9 @@ import Maquina from "../../assets/maquina.svg";
 
 export const Header = () => {
   return (
-    <header className="w-full bg-gradient-to-r from-nav-700 to-link-700 p-4 md:p-6 lg:p-12">
+    <header className="w-full bg-gradient-to-r from-nav-700 to-link-700 p-4 md:p-6 lg:p-12 xl:h-[820px]">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-10 place-content-center">
-        <div className="grid place-content-center p-10 gap-y-3 lg:mx-24">
+        <div className="grid place-content-center p-10 gap-y-3 lg:mx-24 xl:h-[500px]">
           <div className="text-5xl font-semibold text-left">
             Emprendedores Creativos &copy;
             <p className="py-3 text-white text-base font-normal text-justify">

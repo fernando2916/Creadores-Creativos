@@ -22,4 +22,3 @@ export const MenuAccount = () => {
     </div>
   )
 }
-s
